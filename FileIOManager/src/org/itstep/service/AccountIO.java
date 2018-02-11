@@ -13,9 +13,9 @@ public class AccountIO {
 	
 	private static final String FILE_PATH = System.getProperty("user.dir")+SEP+"outFile"+SEP+"myFile.csv"; //-> /outFile/myFile.csv;
 
-	public void writeAccToFile(Account acc) {
+	public static void writeAccToFile(Account acc) {
 		
-		Writer writer = null;
+		FileWriter writer = null;
 		try {
 			writer = new FileWriter(FILE_PATH, true);
 			String textToFile = acc.getLogin() + ", " + 
