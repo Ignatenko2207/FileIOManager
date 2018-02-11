@@ -3,6 +3,7 @@ package org.itstep.service;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+import java.util.ArrayList;
 
 import org.itstep.model.Account;
 
@@ -37,5 +38,10 @@ public class AccountIO {
 		}
 	}
 	
-	
+	public ArrayList<Account> readAccountsFromFile(){
+		ArrayList<Account> accounts = new ArrayList<>();
+		
+		
+		return accounts;
+	}
 }
